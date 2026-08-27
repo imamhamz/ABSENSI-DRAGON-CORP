@@ -65,6 +65,12 @@ async function loadDashboard() {
 
   const belum = Math.max(activeEmployees.length - records.length, 0);
 
+const attendancePercent = activeEmployees.length
+  ? Math.round((records.length / activeEmployees.length) * 100)
+  : 0;
+
+$("attendancePercent").textContent = `${attendancePercent}%`;
+
   $("totalPegawai").textContent = activeEmployees.length;
   $("hadirHariIni").textContent = hadir;
   $("terlambat").textContent = terlambat;
