@@ -55,7 +55,17 @@ button{border:1px solid #dfe5ef;background:#fff;border-radius:8px;padding:7px 11
   </div>
   <div class="grid-2">
     <div class="card">
-      <div class="section-head"><h2>Absensi Hari Ini</h2><div><span id="realtimeStatus">Realtime...</span> <button id="refreshBtn">Refresh</button></div></div>
+     <div class="section-head">
+  <div>
+    <h2>Absensi Hari Ini</h2>
+    <span id="tanggalDashboard">Memuat tanggal...</span>
+  </div>
+
+  <div>
+    <span id="realtimeStatus">Menghubungkan...</span>
+    <button id="refreshBtn">Refresh</button>
+  </div>
+</div>
       <div class="table-wrap"><table><thead><tr><th>Pegawai</th><th>Masuk</th><th>Pulang</th><th>Status</th><th>Data</th></tr></thead><tbody id="attendanceBody"><tr><td colspan="5" class="empty">Memuat data...</td></tr></tbody></table></div>
     </div>
     <div class="card">
